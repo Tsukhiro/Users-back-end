@@ -3,7 +3,7 @@ const uuid = require('uuid')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-const port = 3001
+const port = process.env.PORT || 3001;
 
 const app = express()
 app.use(bodyParser.json())
